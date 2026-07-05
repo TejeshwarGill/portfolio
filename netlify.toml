@@ -1,0 +1,9 @@
+# Netlify build settings for this Gatsby 3 site.
+# The OpenSSL legacy flag is already baked into `npm run build`.
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
