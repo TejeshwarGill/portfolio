@@ -7,3 +7,5 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
+  # Force npm (this project uses package-lock.json, not yarn)
+  NETLIFY_USE_YARN = "false"
