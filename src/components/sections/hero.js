@@ -8,13 +8,17 @@ const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 82vh;
-  height: 82vh;
-  padding: 0;
+  min-height: 90vh;
+  /* Reserve space for the fixed nav so centered content never hides beneath it */
+  padding: var(--nav-height) 0 0;
 
-  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    height: auto;
-    padding-top: var(--nav-height);
+  /* On small or short viewports (phones, scaled Windows displays), don't center —
+     top-align below the nav and let the section grow so nothing gets clipped. */
+  @media (max-width: 768px), (max-height: 720px) {
+    justify-content: flex-start;
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + 40px);
+    padding-bottom: 60px;
   }
 
   h1 {
