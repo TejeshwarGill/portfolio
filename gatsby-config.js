@@ -15,7 +15,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // Output at site root so the index and child sitemap paths match
+        // (v4's default nests the index in /sitemap/ but links to root — 404s in Search Console).
+        output: '/',
+      },
+    },
     `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
