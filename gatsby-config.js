@@ -5,7 +5,7 @@ module.exports = {
     title: 'Tejeshwar Gill',
     description:
       'Tejeshwar Gill is an engineering leader with 17 years of experience building and scaling high-performance organizations across Healthcare AI, Cybersecurity, and AdTech. A UCLA Anderson Executive MBA and BITS Pilani M.S. in Software Engineering, he operates at the intersection of platform strategy and cross-functional execution — translating business strategy into executable technology roadmaps.',
-    siteUrl: 'https://imaginative-pegasus-1d99db.netlify.app', // No trailing slash allowed!
+    siteUrl: 'https://tejeshwargill.com', // No trailing slash allowed!
     image: '/demo.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
