@@ -59,7 +59,10 @@ const Head = ({ title, description, image }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
 
-      {/* TODO: replace with your own Google Search Console verification token */}
+      <meta
+        name="google-site-verification"
+        content="8R-LU0JNuvqG2t6r1eiOsvULY9KYLY9FdweAgDVO7S0"
+      />
     </Helmet>
   );
 };
